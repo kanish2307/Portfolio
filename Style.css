@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #23263A;
+    color: white;
+    flex-wrap: wrap;
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar>h1>span{
+    color:#FF4A57;
+}
+.body{
+    height: 100%;
+    width: 100%;
+}
+.navbar{
+    width: 100%;
+    height: 100px;
+    padding-left: 150px;
+    padding-right:150px;
+    background-color: #212336;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.navcon{
+    display:flex;
+    width: 400px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.navcon>li{
+    list-style-type: none;
+    font-size: larger;
+    font-weight: 500;
+    cursor: pointer;
+}
+.navcon>li>a{
+    text-decoration: none;
+    color: white;
+}
+#home{
+    width: 100%;
+    height:calc(100% - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 150px;
+    padding-right:150px;
+}
+.myprofile{
+    width: 350px;
+    height: 350px;
+    background-image:url("viewPhoto");
+    background-size: cover;
+    border-radius: 50%; 
+}
+.aboutme{
+    width: 800px;
+}
+.aboutme>h1{
+    font-size: 95px;
+}
+.aboutme>p{
+    font-size: 20px;
+    text-align: justify;
+}
+.aboutme>a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    width: 150px;
+    height:50px;
+    font-size:25px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 50px;
+    background-color: #FF4A57;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+#myskills{
+    width: 100%;
+    height:auto;
+    display: flex;
+    position: relative;
+}
+#myskills>h1{
+    color: #FF4A57;
+    padding-left: 150px;
+    padding-right: 150px;
+    font-size: 50px;
+    position: absolute;
+    top: 0;
+    left:0;
+}
+#myskills>h1>span{
+    display: block;
+    width: 100px;
+    height: 7px;
+    background-color: #FF4A57;   
+}
+.project{
+    margin: auto;
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+    padding-left: 150px;
+    padding-right:150px ;
+}
+
+.works{
+    margin:50px;
+    width:350px;
+    height: 360px;
+    background-color:#2B2D41;
+    border-radius: 5px;
+    padding: 40px;
+    position: relative;
+}
+.works>img{
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin-bottom: 40px;
+}
+.works>p{
+    text-align: justify;
+    margin: 25px auto;
+}
+.works>a{
+    display: block;
+    color:white;
+    background-color: #FF4A57;
+    border-radius:3px;
+    width: 120px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 15px;
+    text-align: center;
+}
+.works>a:hover,.aboutme>a:hover{
+    background-color:rgb(255, 255, 255);
+    color: #FF4A57;
+    font-weight: 1000;
+}
+#contact>h1{
+    color: #FF4A57;
+    padding-left: 150px;
+    padding-right: 150px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#contact{
+    height: 300px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#contact>p{
+    background-color: #2B2D41;
+    margin: 10px;
+    width: 300px;
+    height: 150px;
+    text-align: center;
+    border-radius: 7px;
+}
+#contact>p>img{
+    display: block;
+    margin: 20px auto;
+
+}
+.project{
+        height: auto;
+        margin: 50px;
+    }   
+
+@media only screen and (max-width: 1500px) {
+    #contact>h1,#myskills>h1,.navbar,.project{
+        padding-left:100px;
+        padding-right:100px;
+    }
+    .myprofile{
+    width: 300px;
+    height: 300px;
+    min-width: 300px;
+    min-height: 300px;
+    margin: auto;
+    }
+    #home{
+        height:auto;
+        display: block;
+        padding: 0;
+
+      }
+      .aboutme>h1{
+        text-align: center;
+        font-size: 50px;
+
+      }
+      .aboutme{
+        display: block;
+        margin: auto;
+      }
+      .aboutme>a{
+        margin: auto;
+      }
+      #myskills,#contact{
+        height:auto;
+        padding-top: 60px;
+        padding-bottom: 30px;
+        
+    }
+    .project{
+        margin:50px auto;
+        display: flex;
+        justify-content:space-around;
+        flex-wrap: wrap;
+        align-items: center;
+        height:auto;
+    }
+    
+
+  }
+  @media only screen and (max-width: 1400px) {
+    #contact>h1,#myskills>h1,.navbar,.project{
+        padding-left:20px;
+        padding-right:20px;
+    }
+    
+    .project{
+        width:100%;
+        margin:50px auto;
+        height:auto;
+        justify-content: space-evenly;
+    }
+    
+    .works{
+        margin:50px 10px;
+        width:220px;
+        height: 220px;
+        text-align: center;
+    }
+    .works>img{
+        width: 40px;
+        height: 40px;
+        display: block;
+        margin:10px auto;
+    }
+    .works>p{
+        display: none;
+    }
+    
+    
+}
+  @media only screen and (max-width: 1000px) {
+    #contact>h1,#myskills>h1,.navbar,.project{
+        padding-left:50px;
+        padding-right:50px;
+    }
+    .aboutme{
+       width: 100%;
+
+      }
+      .aboutme>p{
+        width: 80%;
+        margin: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+      }
+      .project{
+        margin:50px auto;
+        height:auto;
+    }
+    
+    .works{
+        margin:50px;
+        width:150px;
+        height: 190px;
+        text-align: center;
+    }
+    .works>h2{
+        font-size: 20px;
+    }
+    .works>img{
+        width: 40px;
+        height: 40px;
+        display: block;
+        margin:10px auto;
+    }
+    .works>p{
+        display: none;
+    }
+  }
+  @media only screen and (max-width: 770px) {
+    #contact>h1,#myskills>h1,.project{
+        padding-left:10px;
+        padding-right:10px;
+    }
+    .navbar{
+        padding: 0;
+    }
+    .project{
+        padding: 0;
+        margin:auto;
+        width: 90%;
+    }
+    .navbar{
+        display: block;
+        text-align: center;
+        height: 50px;
+        margin-bottom: 30px;
+    }
+    .navcon{
+        display: none;
+    }
+    .works{
+        margin:30px auto;
+        width: 320px;
+        height: 380px;
+    }
+    #myskills>h1,#contact>h1{
+        left: 10px;
+        font-size: 25px;
+    }
+    .aboutme>h1{
+        font-size: 40px;
+    }
+    .project{
+        flex-direction: column;
+    }
+    .works>p{
+        display: block;
+    }
+
+  }
+ 
+#diswork{
+    position:fixed;
+    width: 50%;
+    height: 500px;
+    min-height: 500px;
+    max-height: 900px;
+    margin: auto;
+    max-width: 500px;
+    min-width: 300px;
+    background-color: #dee0fa;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-radius: 10px;
+    color:#FF4A57;
+    text-align: center;
+    display: none;
+    padding: 5px;
+
+}
+#diswork>h1{
+    background-color:#2B2D41;
+    border-radius: 5px;
+    padding-bottom: 5px;
+}
+#diswork>h1>span{
+    color:white;
+    position: absolute;
+    right:25px;
+    top:1px;
+}
+.worklist{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    overflow:auto;   
+}
+.worklist>a{
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: block;
+    text-align:center;
+    background-color: #FF4A57;
+    font-size: 25px;
+    width:90%;
+    margin:10px auto;
+    border-radius:5px;
+    height: 50px;
+    line-height: 50px;
+}
+#viewcode{
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    /* text-decoration: underline; */
+    color: #ffffff;
+    background-color: #2B2D41;
+    position:absolute;
+    bottom: 0px;
+    right:10px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+a,#diswork>h1>span{
+    cursor: pointer;
+}
+.worklist>a:hover,#viewcode:hover{
+    color: #FF4A57;
+    background-color:white;
+    border: 1px solid;
+}
+@media only screen and (max-width: 850px){
+    .worklist>a{
+        font-size: 20px;
+    }
+}

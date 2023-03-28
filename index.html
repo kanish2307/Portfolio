@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanishkar</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="body">
+    <div class="navbar">
+        <h1 id="name">kan<span>i</span>sh</h1>
+        <ul class="navcon">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#myskills">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    <div id="home">
+        <div class="myprofile"></div>
+        <div class="aboutme">
+            <h1>Hello, I'm a</h1>
+            <h1>Tester</h1>
+            <p>I'm Kanishkar. My home town is Namakkal. I am studying at Zoho schools of technology. I am very much interested in learning software testing and web development.</p>
+            <a href="#myskills">Skill-set</a>
+        </div>
+    </div> 
+    <div id="myskills">
+        <h1>Skill-set<span></span></h1>
+        <div class="project">
+            <div class="works">
+                <img src="icons8-front-end-64.png" alt="">
+                <h2>Frond-end</h2>
+                <p>
+                    The layer above the back end is the front end and it includes all software or hardware that is part of a user interface.</p> <a onclick="showcon(1)">my work >></a> 
+            </div>
+            <div class="works">
+                <img src="java.png" alt="">
+                <h2>Java</h2>
+                <p>The back end refers to parts of a computer application or a program's code that allow it to operate and that cannot be accessed by a user. </p><a onclick="showcon(2)">my work >></a>
+            </div>
+            <div class="works">
+                <img src="testing.png" alt="">
+                <h2>Test case</h2>
+                <p>A test case refers to the actions required to verify a specific feature or functionality in software testing.</p><a onclick="showcon(3)">my work >></a>
+            </div>
+            <div class="works">
+                <img src="icons8-selenium-50.png" alt="">
+                <h2>Selenium ide</h2>
+                <p>Selenium IDE (Integrated Development Environment) is primarily a record/run tool that a test case developer uses to develop Selenium Test cases.   </p><a onclick="showcon(4)">my work >></a>
+            </div>
+            <div class="works">
+                <img src="icons8-selenium-50.png" alt="">
+                <h2>Webdriver</h2>
+                <p>WebDriver is a remote control interface that enables introspection and control of user agents. </p><a onclick="showcon(5)">my work >></a>
+            </div>
+            <div class="works">
+                <img src="testng-tutorial.png" alt="">
+                <h2>TestNG</h2>
+                <p>TestNG is a testing framework for the Java programming language created by Cédric Beust and inspired by JUnit and NUnit.</p><a onclick="showcon(6)">my work >></a>
+            </div>
+        </div>
+    </div> 
+    <div id="contact">
+        <h1>Connect with me</h1>
+        <p class="contacts"><img src="conversation.png" alt="">+91 88383 98713</p>
+        <p class="contacts"><img src="check.png" alt="">kanishkar2307@gmail.com</p>
+    </div>
+</div>
+<div id="diswork">
+    <h1>My work<span onclick="closediv()">x</span></h1>
+    <div class="worklist">
+
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+
+
+
+</html>
